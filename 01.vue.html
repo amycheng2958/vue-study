@@ -12,18 +12,27 @@
 <body>
     <div id="app">
         <p>{{counter}}</p>
+        <p>{{userProfile.name}}</p>
+        <p v-show="userProfile.age">{{userProfile.age}}</p>
     </div>
     <script src="node_modules/vue/dist/vue.js"></script>
     <script>
         const app = new Vue({
             el: '#app',
             data: {
-                counter: 1
+                counter: 1,
+                userProfile: {
+                    name: 'Anika'
+                }
             }
         })
-        setInterval(()=>{
-            app.counter++
-        },1000)
+        app.counter = 12
+        app.userProfile.name = 'cyy'
+        app.userProfile.age = 27
+        // Vue.set(app.userProfile, 'age', 27)
+        // setInterval(()=>{
+        //     app.counter++
+        // },1000)
     </script>
 </body>
 

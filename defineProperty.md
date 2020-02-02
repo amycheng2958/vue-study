@@ -3,12 +3,12 @@
 * 实现只有一个key的obj的响应式
 * 实现多个key的obj的响应式（循环遍历属性名）
 * 实现key的值为object的响应式（递归）
-* 实现设置key的val为obj的响应式
+* 实现设置key的val为obj的响应式（递归）
 * 实现新增的key的响应式
 * 实现数组的响应式
 
 
-* 实现kvue类，对kvue实例中的data设置响应式
+* 实现kvue类，创建Observer（分辨数据是对象还是数组）实例对kvue实例中的data设置响应式
 * 实现代理，简化vue实例对data的访问
 * 编译：插值文本解析，指令解析(类数组和Array.from())
 * 事件解析
