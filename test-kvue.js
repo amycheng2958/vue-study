@@ -7,6 +7,7 @@ function defineReactive(obj, key, val) {
         console.log("set", key, newval);
         observe(newval);
         val = newval;
+        dep.notify();
       }
     },
     get() {

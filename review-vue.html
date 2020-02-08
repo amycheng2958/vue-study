@@ -16,6 +16,7 @@
         <p k-text="counter"></p>
         <div k-text="name"></div>
         <div k-html="desc"></div>
+        <p>{{obj.foo}}</p>
     </div>
     <!-- <script src="./review-kvue.js"></script>
     <script src="./review-compile.js"></script> -->
@@ -27,9 +28,12 @@
             data: {
                 counter: 1,
                 name: 'cyy',
+                arr: [1,2,4],
+                obj: {foo: 'foo'},
                 desc: '<span style="color:red">kue balabala</span>',
             }
         })
+        // app.arr[0]
         setTimeout(()=>{
             app.counter++
         },1000)

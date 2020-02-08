@@ -16,9 +16,17 @@
 * 创建dep
 
 
-# 源码剖析
+# 源码剖析1
 
 * 查找入口文件，从package.json开始,覆盖$mount，执行模板解析和编译工作(platforms/web/entry-runtime-with-compiler.js)
 * 定义$mount方法(platforms/web/runtime/index.js)
 * 定义全局api(core/index.js)
 * vue构造函数里面的init方法(core/instance/init.js)
+
+# 源码剖析2
+* 异步更新
+* diff算法
+
+# 源码剖析3
+* diff算法举例说明，怎么回答diff算法面试题
+* 模板编译
